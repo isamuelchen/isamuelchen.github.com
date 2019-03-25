@@ -21,8 +21,13 @@
       <v-container>
         Hello Vuetify World!
         <v-layout row wrap>
-        <v-flex xs8>
-          <v-card dark color="secondary">
+        <v-flex xs4>
+          <v-card dark color="success">
+            <v-card-text class="px-0">8</v-card-text>
+          </v-card>
+        </v-flex>
+        <v-flex xs4>
+          <v-card dark color="warning">
             <v-card-text class="px-0">8</v-card-text>
           </v-card>
         </v-flex>
@@ -31,6 +36,11 @@
             <v-card-text class="px-0">4</v-card-text>
           </v-card>
         </v-flex>
+      <v-flex v-for="i in 333" :key="`6${i}`" xs6>
+        <v-card dark color="secondary">
+          <v-card-text class="px-0">6</v-card-text>
+        </v-card>
+      </v-flex>
         </v-layout>
       </v-container>
     </v-content>
